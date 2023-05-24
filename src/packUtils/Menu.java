@@ -18,6 +18,7 @@ public class Menu {
             UtilString.linea();
             System.out.print(Colores.FONDO_BLANCO);
             System.out.println(Colores.LETRA_AZUL + "1. Mostrar Monstruos con NamedQuery");
+            System.out.println(Colores.LETRA_AZUL + "2. Filtrar Monstruos");
             System.out.println(Colores.LETRA_AZUL + UtilString.strRepetir('-',20));
             System.out.println(Colores.LETRA_AZUL + "0. Salir");
             System.out.println(Colores.LETRA_AZUL + UtilString.strRepetir('-',20));
@@ -31,6 +32,9 @@ public class Menu {
                 switch (opcion) {
                     case 1:
                         JPAVista.verMonstruosNamedQuery();
+                        break;   
+                    case 2:
+                        JPAVista.verMonstruosFiltrados();
                         break;   
                     // **************************
                     // SALIR
